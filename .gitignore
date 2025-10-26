@@ -1,0 +1,61 @@
+# 🧠 Learn more: https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# 📦 Dependencies
+node_modules/
+
+# 🚀 Expo & EAS
+.expo/
+.expo-shared/
+dist/
+web-build/
+build/
+eas-output/
+eas-cache/
+expo-env.d.ts
+eas.json
+
+# 🧱 Native builds (Android/iOS)
+android/.gradle/
+android/app/build/
+android/build/
+ios/build/
+ios/Pods/
+ios/DerivedData/
+*.orig.*
+*.jks
+*.keystore
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# 🔥 Local assets (large or dynamic files)
+assets/catalog/*            # Ignore extracted catalog folder
+!assets/catalog.zip          # ✅ KEEP catalog.zip in repo
+assets/uploads/*
+assets/temp/*
+assets/.DS_Store
+
+# 🧰 IDE / Tools
+.vscode/
+.idea/
+*.iml
+
+# 🧪 Metro / Debug
+.metro-health-check*
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# 🍏 macOS / Windows temp files
+.DS_Store
+Thumbs.db
+
+# 🔒 Environment & Firebase credentials
+.env
+.env*.local
+#   google-services.json
+GoogleService-Info.plist
+
+# 🧩 TypeScript cache
+*.tsbuildinfo

@@ -121,8 +121,8 @@ const AppointmentCalendar = ({ navigation }) => {
       await sendNotification(
         userId,
         newStatus === 'Confirmed'
-          ? 'Appointment Confirmed ✅'
-          : 'Appointment Rejected ❌',
+          ? 'Appointment Confirmed '
+          : 'Appointment Rejected ',
         newStatus === 'Confirmed'
           ? `Your appointment on ${appointment.date} at ${appointment.time} has been confirmed.`
           : `Sorry, your appointment on ${appointment.date} at ${appointment.time} was rejected.`
@@ -198,10 +198,10 @@ const AppointmentCalendar = ({ navigation }) => {
                 <Text style={styles.cardTitle}>{item.fullName}</Text>
               </View>
 
-              <Text style={styles.cardText}>📅 {item.date} — 🕒 {item.time}</Text>
-              <Text style={styles.cardText}>📞 {item.phone}</Text>
-              <Text style={styles.cardText}>📌 Fabric: {item.fabric || 'N/A'}</Text>
-              <Text style={styles.cardText}>🎨 Style: {item.styleCategory || 'N/A'}</Text>
+              <Text style={styles.cardText}> {item.date} — 🕒 {item.time}</Text>
+              <Text style={styles.cardText}> {item.phone}</Text>
+              <Text style={styles.cardText}> Fabric: {item.fabric || 'N/A'}</Text>
+              <Text style={styles.cardText}> Style: {item.styleCategory || 'N/A'}</Text>
 
               {item.styleImage && (
                 <Image

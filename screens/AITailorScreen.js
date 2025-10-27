@@ -54,7 +54,7 @@ const AITailorScreen = () => {
       const advice = generateStyleAdvice(fakeMeasurements);
       setStyleAdvice(advice);
       setLoading(false);
-      Alert.alert('✅ Scan Complete', 'Measurements and style advice generated!');
+      Alert.alert(' Scan Complete', 'Measurements and style advice generated!');
     }, 3000);
   };
 
@@ -75,7 +75,7 @@ const AITailorScreen = () => {
       advice += '• A classic fit style with soft fabrics will complement your proportions.\n';
     }
 
-    advice += '\n👔 Recommended: Cotton or linen fabrics for daily wear.';
+    advice += '\n Recommended: Cotton or linen fabrics for daily wear.';
     return advice;
   };
 
@@ -121,7 +121,7 @@ const AITailorScreen = () => {
 
         {measurements && !loading && (
           <View style={styles.resultBox}>
-            <Text style={styles.sectionTitle}>📏 Estimated Measurements</Text>
+            <Text style={styles.sectionTitle}> Estimated Measurements</Text>
             {Object.entries(measurements).map(([key, val]) => (
               <Text key={key} style={styles.measureText}>
                 {key.charAt(0).toUpperCase() + key.slice(1)}:{' '}

@@ -173,7 +173,7 @@ const AppointmentScreen = ({ navigation }) => {
                   <Text style={styles.infoText}>Fabric: {item.fabric}</Text>
                   <Text style={styles.infoText}>Style: {item.styleCategory}</Text>
                   <Text style={styles.infoText}>Complexity: {item.complexity}</Text>
-                  <Text style={styles.infoText}>💰 Total: ₹{item.totalCost}</Text>
+                  <Text style={styles.infoText}>Total: ₹{item.totalCost}</Text>
                   <Text style={styles.infoText}>Advance: ₹{item.advancePaid}</Text>
                   <Text style={styles.infoText}>Balance: ₹{item.balanceDue}</Text>
                 </View>
